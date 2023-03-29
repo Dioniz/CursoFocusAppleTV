@@ -26,13 +26,10 @@ class ProfileView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
-        profileList = UserProfileList(maxNumProfiles: 3, currentProfile: 2, items: [
+        profileList = UserProfileList(maxNumProfiles: 6, currentProfile: 2, items: [
             UserProfile(id: "0", name: "Avatar 1"),
             UserProfile(id: "1", name: "Avatar 2"),
-            UserProfile(id: "2", name: "Avatar 3"),
-            UserProfile(id: "2", name: "Avatar 4"),
-            UserProfile(id: "2", name: "Avatar 5"),
-            UserProfile(id: "2", name: "Avatar 6"),
+            UserProfile(id: "2", name: "Avatar 3")
         ])
         if let profileList = profileList {
             showProfileList(profileList: profileList)
@@ -107,12 +104,6 @@ extension ProfileView {
 extension ProfileView: ProfileCellDelegate {
     func onClickProfileCell(profile: UserProfile) {
         print("Profile clicked: \(profile.name)")
-        profileList?.items?.append(UserProfile(id: "2", name: "Avatar 7"))
-        profileList?.currentProfile = 4
-
-        if let profileList = profileList {
-            reloadProfiles(profileList: profileList)
-        }
     }
 
 }

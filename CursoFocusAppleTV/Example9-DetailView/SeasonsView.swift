@@ -46,6 +46,14 @@ class SeasonsView: UIView {
     }
 
     func commonInit() {
+        let menuPressRecognizer = UITapGestureRecognizer()
+        menuPressRecognizer.addTarget(self, action: #selector(self.menuButtonAction(recognizer:)))
+        menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.menu.rawValue)]
+        self.addGestureRecognizer(menuPressRecognizer)
+    }
+
+    @objc func menuButtonAction(recognizer: UITapGestureRecognizer) {
+        print("Back button action in seasonsView")
     }
 
     func setSeasonsInitialData(temporadas: [String], episodes: [Episodio]?, initialSeason:Int?) {

@@ -41,15 +41,12 @@ class MainMenuItemCollectionViewCell: UICollectionViewCell {
 
     @objc func openInfo () {
         self.opened = true
-        self.setNeedsLayout()
         self.redrawCell()
-        //self.delegate?.menuCellLayoutUpdated()
     }
 
     func closeInfo() {
         self.stopOpenTimer()
         self.opened = false
-        self.setNeedsLayout()
         self.redrawCell()
         self.delegate?.menuCellLayoutUpdated()
     }
@@ -134,7 +131,6 @@ class MainMenuItemCollectionViewCell: UICollectionViewCell {
 
 extension MainMenuItemCollectionViewCell {
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-        //updateLabelAttributes()
         self.titleLabel.sizeToFit()
 
         if !self.isFocused {

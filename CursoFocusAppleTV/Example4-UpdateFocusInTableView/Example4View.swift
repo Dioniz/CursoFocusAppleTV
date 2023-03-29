@@ -56,6 +56,7 @@ class Example4View: UIViewController {
         focusGuide.isEnabled = true
 
         // TODO: remembersLastFocusedIndexPath
+        // tableView.remembersLastFocusedIndexPath = true
     }
 
     @IBAction func updateFocusAction(_ sender: Any) {
@@ -90,4 +91,7 @@ extension Example4View: UITableViewDelegate {
     }
 
     // TODO: indexPathForPreferredFocusedView
+    func indexPathForPreferredFocusedView(in tableView: UITableView) -> IndexPath? {
+        .init(row: self.tableFocusView, section: 0)
+    }
 }

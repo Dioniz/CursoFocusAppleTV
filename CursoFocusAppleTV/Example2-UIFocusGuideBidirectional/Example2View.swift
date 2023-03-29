@@ -19,8 +19,9 @@ class Example2View: UIViewController {
         super.viewDidLoad()
 
         restoresFocusAfterTransition = false
-        self.addTopThirdButtonLayoutGuide()
+        //self.addTopThirdButtonLayoutGuide()
         // TODO: addSecondLayoutGuide
+        addVisibleLayoutGuide()
     }
 
     private func addTopThirdButtonLayoutGuide() {
@@ -36,12 +37,13 @@ class Example2View: UIViewController {
          focusGuide.isEnabled = true
     }
 
-    /*
+
     private func addVisibleLayoutGuide() {
         _ = self.addFocusGuide(from: topThirdButton, to: buttonBottom, direction: .bottom)
         _ = self.addFocusGuide(from: buttonBottom, to: topThirdButton, direction: .top)
+        _ = self.addFocusGuide(from: buttonBottom, to: topFirstButton, direction: .bottom)
     }
-    */
+
 }
 
 extension Example2View {

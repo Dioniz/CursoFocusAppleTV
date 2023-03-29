@@ -109,4 +109,8 @@ extension Example5View {
 
     // TODO: Add didUpdateFocus
     // Ejecución del didUpdateFocus dentro de una vista no enfocable
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        super.didUpdateFocus(in: context, with: coordinator)
+
+    }
 }

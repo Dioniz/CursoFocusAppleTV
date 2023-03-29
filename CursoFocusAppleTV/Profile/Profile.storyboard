@@ -19,7 +19,7 @@
         <!--Profile View-->
         <scene sceneID="nNI-cR-r9A">
             <objects>
-                <viewController storyboardIdentifier="ProfileView" id="PT9-8U-kP8" customClass="ProfileView" customModule="MovistarPlusAppleTV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileView" id="PT9-8U-kP8" customClass="ProfileView" customModule="CursoFocusAppleTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2YQ-m8-f78"/>
                         <viewControllerLayoutGuide type="bottom" id="HeS-IK-llV"/>
@@ -34,7 +34,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-63-qC6" customClass="ProfileCollectionView" customModule="MovistarPlusAppleTV" customModuleProvider="target">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-63-qC6" customClass="ProfileCollectionView" customModule="CursoFocusAppleTV" customModuleProvider="target">
                                 <rect key="frame" x="100" y="360" width="1720" height="243"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -131,7 +131,7 @@ se cerrará en</string>
                                 <color key="textColor" white="1" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fz-NH-IcR" customClass="SRCountdownTimer" customModule="MovistarPlusAppleTV" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fz-NH-IcR" customClass="SRCountdownTimer" customModule="CursoFocusAppleTV" customModuleProvider="target">
                                 <rect key="frame" x="1805" y="925" width="65" height="65"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

@@ -54,7 +54,7 @@ class DetailView: UIViewController {
         setSeasonSubMenu(
             temporadas: ["Temp 1", "Temp 2", "Temp 3"],
             episodes: [Episodio(), Episodio(), Episodio(), Episodio(), Episodio(), Episodio(), Episodio(), Episodio()],
-            initialSeason: 0
+            initialSeason: 1
         )
     }
 

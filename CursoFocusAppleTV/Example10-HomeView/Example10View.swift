@@ -54,7 +54,6 @@ class Example10View: UIViewController {
         tableView.insetsLayoutMarginsFromSafeArea = false
         tableView.contentMode = .scaleAspectFill
         tableView.backgroundColor = UIColor.clear
-        tableView.isScrollEnabled = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.mask = nil
         tableView.clipsToBounds = true
@@ -215,27 +214,11 @@ extension Example10View {
         super.didUpdateFocus(in: context, with: coordinator)
         guard let tag = context.nextFocusedView?.tag else {return}
 
-        if context.nextFocusedView?.superview?.superview is HomeMenuView {
-            self.menuView.alpha = 1
-            self.contentGridTopConstraint?.update(offset: topConstraintClosed)
-        } else if context.previouslyFocusedView?.superview?.superview is HomeMenuView &&
-                    context.nextFocusedView is ImageExpandableCollectionCell {
-            self.menuView.alpha = 0.5
-            self.contentGridTopConstraint?.update(offset: topConstraintOpened)
-        }
-
         if context.nextFocusedView is UIViewFocusBorder {
             self.stopPromoCarousel()
             self.currentPromoPos = tag
         } else {
             self.startPromoCarousel()
-        }
-
-        if context.previouslyFocusedView is ImageExpandableCollectionCell,
-           let nextView = context.nextFocusedView?.superview?.superview?.superview as? TableViewCell, let indexPath = tableView.indexPath(for: nextView) {
-            coordinator.addCoordinatedAnimations({
-                self.tableView.scrollToRow(at: indexPath, at: .middle, animated: true)
-            }, completion: nil)
         }
     }
 }

@@ -31,6 +31,7 @@ class TableViewCell: UITableViewCell {
         super.awakeFromNib()
         collectionView.register(UINib(nibName: "ImageCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionCell")
         collectionView.register(UINib(nibName: "ImageExpandableCollectionCell", bundle: nil), forCellWithReuseIdentifier: "ImageExpandableCollectionCell")
+        self.collectionView.register(TrackDummyFocusable.self, forCellWithReuseIdentifier: "TrackCellDummyFocusable")
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.collectionViewLayout = createFlowLayout()

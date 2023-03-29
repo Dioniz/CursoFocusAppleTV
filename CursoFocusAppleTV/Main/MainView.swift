@@ -25,7 +25,7 @@ class MainView: UIViewController, MainViewProtocol {
         MainOptions(title: "8 - GuideTV", storyboardName: "TVGuide", viewName: "TVGuideView"),
         MainOptions(title: "9 - DetailView", storyboardName: "Main", viewName: "DetailView"),
         MainOptions(title: "10 - HomeView", storyboardName: "Main", viewName: "Example10View"),
-        MainOptions(title: "10 - ProfileView", storyboardName: "Profile", viewName: "ProfileView"),
+        MainOptions(title: "11 - ProfileView", storyboardName: "Profile", viewName: "ProfileView"),
     ]
 
     override func viewDidLoad() {

@@ -15,6 +15,8 @@ class CustomStackView: UIView {
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
 
+    var focusView: UIFocusEnvironment!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         addView()
@@ -42,9 +44,23 @@ class CustomStackView: UIView {
     }
 
     func commonInit() {
+        focusView = button1
     }
 
     // TODO: setFocusIndex
+
+    func setFocusIndex(index: Int) {
+        switch index {
+        case 1:
+            focusView = button1
+        case 2:
+            focusView = button2
+        case 3:
+            focusView = button3
+        default:
+            focusView = button1
+        }
+    }
 
     // TODO: Change preferredFocusEnvironments
     override var preferredFocusEnvironments: [UIFocusEnvironment] {

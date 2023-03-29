@@ -29,13 +29,17 @@ class Example3View: UIViewController {
     @IBAction func buttonsAction(_ sender: Any) {
         clearSelectedButtons()
         if sender as? UIButton == topFirstButton {
+            customStackView.setFocusIndex(index: 1)
             topFirstButton.isSelected = true
         } else if sender as? UIButton == topSecondButton {
+            customStackView.setFocusIndex(index: 2)
             topSecondButton.isSelected = true
         } else if sender as? UIButton == topThirdButton {
+            customStackView.setFocusIndex(index: 3)
             topThirdButton.isSelected = true
         }
         // TODO: setNeedsFocusUpdate
+        //self.setNeedsFocusUpdate()
     }
 
     private func clearSelectedButtons() {
