@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Light.ttf">
+            <string>WorkSans-Light</string>
+        </array>
+        <array key="WorkSans-Regular.ttf">
+            <string>WorkSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Profile View-->
+        <scene sceneID="nNI-cR-r9A">
+            <objects>
+                <viewController storyboardIdentifier="ProfileView" id="PT9-8U-kP8" customClass="ProfileView" customModule="MovistarPlusAppleTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2YQ-m8-f78"/>
+                        <viewControllerLayoutGuide type="bottom" id="HeS-IK-llV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8pp-G7-Jmz">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECCIONA TU PERFIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzC-0Z-CWS">
+                                <rect key="frame" x="751.5" y="245" width="417" height="46"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vUa-63-qC6" customClass="ProfileCollectionView" customModule="MovistarPlusAppleTV" customModuleProvider="target">
+                                <rect key="frame" x="100" y="360" width="1720" height="243"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="vuW-4W-WJ2"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TAC-Si-VsM">
+                                    <size key="itemSize" width="306" height="258"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="5KL-Iz-P9k">
+                                        <rect key="frame" x="0.0" y="-7.5" width="169" height="258"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BjI-h6-LAo">
+                                            <rect key="frame" x="0.0" y="0.0" width="169" height="258"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="UN4-k3-iZH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="169" height="169"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="169" id="FmV-m2-BtK"/>
+                                                        <constraint firstAttribute="height" constant="169" id="aiz-ce-ahR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYf-eJ-cvM">
+                                                    <rect key="frame" x="0.0" y="212" width="169" height="46"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jYf-eJ-cvM" firstAttribute="leading" secondItem="BjI-h6-LAo" secondAttribute="leading" id="YuH-To-ZyI"/>
+                                                <constraint firstAttribute="trailing" secondItem="jYf-eJ-cvM" secondAttribute="trailing" id="kZh-hI-xI0"/>
+                                                <constraint firstAttribute="bottom" secondItem="jYf-eJ-cvM" secondAttribute="bottom" id="l6g-RY-ffR"/>
+                                                <constraint firstItem="UN4-k3-iZH" firstAttribute="leading" secondItem="BjI-h6-LAo" secondAttribute="leading" id="n31-jj-awW"/>
+                                                <constraint firstAttribute="trailing" secondItem="UN4-k3-iZH" secondAttribute="trailing" id="o9U-Lr-FL5"/>
+                                                <constraint firstItem="UN4-k3-iZH" firstAttribute="top" secondItem="BjI-h6-LAo" secondAttribute="top" id="xmb-HS-uuT"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="169" height="258"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="u1n-uC-R8c">
+                                <rect key="frame" x="610" y="727" width="700" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1KR-PU-0p4">
+                                        <rect key="frame" x="0.0" y="0.0" width="330.5" height="74"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Crear Perfil"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzA-mH-ms8">
+                                        <rect key="frame" x="369.5" y="0.0" width="330.5" height="74"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                        <state key="normal" title="Editar Perfiles"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="700" id="9pK-OC-RNY"/>
+                                    <constraint firstAttribute="height" constant="74" id="Mqr-dv-K5U"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhV-E2-j0g">
+                                <rect key="frame" x="610" y="839" width="700" height="151"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxz-Jo-b92">
+                                        <rect key="frame" x="0.0" y="40.5" width="700" height="70"/>
+                                        <string key="text">Tu perfil ha sido borrado
+ Selecciona otro pefil para acceder</string>
+                                        <fontDescription key="fontDescription" name="WorkSans-Regular" family="Work Sans" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vxz-Jo-b92" secondAttribute="trailing" id="0Nb-ix-jsv"/>
+                                    <constraint firstItem="Vxz-Jo-b92" firstAttribute="centerY" secondItem="fhV-E2-j0g" secondAttribute="centerY" id="1lW-8f-qfW"/>
+                                    <constraint firstAttribute="width" constant="700" id="ksv-mU-kl9"/>
+                                    <constraint firstItem="Vxz-Jo-b92" firstAttribute="leading" secondItem="fhV-E2-j0g" secondAttribute="leading" id="liM-id-ChT"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiL-TO-uLq">
+                                <rect key="frame" x="1625" y="925" width="158" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="feL-Jd-BNw"/>
+                                </constraints>
+                                <string key="text">Esta ventana
+se cerrará en</string>
+                                <fontDescription key="fontDescription" name="WorkSans-Light" family="Work Sans" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="0.51000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fz-NH-IcR" customClass="SRCountdownTimer" customModule="MovistarPlusAppleTV" customModuleProvider="target">
+                                <rect key="frame" x="1805" y="925" width="65" height="65"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="YKL-zC-MhE"/>
+                                    <constraint firstAttribute="height" constant="65" id="hPa-eX-em3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="1" alpha="0.32000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailLineColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="labelTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trailLineWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fan-Vn-mCF"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fan-Vn-mCF" firstAttribute="bottom" secondItem="fhV-E2-j0g" secondAttribute="bottom" constant="30" id="0I6-fJ-cHk"/>
+                            <constraint firstItem="4fz-NH-IcR" firstAttribute="leading" secondItem="TiL-TO-uLq" secondAttribute="trailing" constant="22" id="5ED-Kx-dJz"/>
+                            <constraint firstItem="4fz-NH-IcR" firstAttribute="trailing" secondItem="fan-Vn-mCF" secondAttribute="trailing" constant="30" id="6cB-6p-92y"/>
+                            <constraint firstItem="XzC-0Z-CWS" firstAttribute="top" secondItem="8pp-G7-Jmz" secondAttribute="top" constant="245" id="Dwe-Ub-WUn"/>
+                            <constraint firstItem="fhV-E2-j0g" firstAttribute="centerX" secondItem="fan-Vn-mCF" secondAttribute="centerX" id="FSm-jE-WaG"/>
+                            <constraint firstItem="fan-Vn-mCF" firstAttribute="bottom" secondItem="TiL-TO-uLq" secondAttribute="bottom" constant="30" id="LjQ-3l-d9Q"/>
+                            <constraint firstItem="fhV-E2-j0g" firstAttribute="top" secondItem="u1n-uC-R8c" secondAttribute="bottom" constant="38" id="SUb-SP-Rko"/>
+                            <constraint firstItem="vUa-63-qC6" firstAttribute="leading" secondItem="fan-Vn-mCF" secondAttribute="leading" constant="20" id="XqQ-wg-CoY"/>
+                            <constraint firstItem="XzC-0Z-CWS" firstAttribute="centerX" secondItem="8pp-G7-Jmz" secondAttribute="centerX" id="eyU-Zy-sq5"/>
+                            <constraint firstItem="u1n-uC-R8c" firstAttribute="centerX" secondItem="fan-Vn-mCF" secondAttribute="centerX" id="ghd-Jp-nNM"/>
+                            <constraint firstItem="fan-Vn-mCF" firstAttribute="trailing" secondItem="vUa-63-qC6" secondAttribute="trailing" constant="20" id="jHM-YY-dBQ"/>
+                            <constraint firstItem="vUa-63-qC6" firstAttribute="top" secondItem="XzC-0Z-CWS" secondAttribute="bottom" constant="69" id="uA9-Ml-Ibe"/>
+                            <constraint firstItem="u1n-uC-R8c" firstAttribute="top" secondItem="vUa-63-qC6" secondAttribute="bottom" constant="124" id="wVb-jk-9wG"/>
+                            <constraint firstItem="fan-Vn-mCF" firstAttribute="bottom" secondItem="4fz-NH-IcR" secondAttribute="bottom" constant="30" id="yjA-NB-KTj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="createButton" destination="1KR-PU-0p4" id="IL1-s2-MZ8"/>
+                        <outlet property="editButton" destination="fzA-mH-ms8" id="U7N-v2-QjW"/>
+                        <outlet property="profileCollectionView" destination="vUa-63-qC6" id="aO4-bi-Uy4"/>
+                        <outlet property="removedView" destination="fhV-E2-j0g" id="7d2-Kg-sba"/>
+                        <outlet property="timerLabel" destination="TiL-TO-uLq" id="GNI-oo-qad"/>
+                        <outlet property="titleLabel" destination="XzC-0Z-CWS" id="xg2-Yf-VAt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ixN-UV-TbV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-291" y="250"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profile" width="1200" height="675"/>
+    </resources>
+</document>

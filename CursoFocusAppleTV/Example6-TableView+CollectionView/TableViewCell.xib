@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="218" id="Cmk-5p-2fx" customClass="TableViewCell" customModule="CursoAppleTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cmk-5p-2fx" id="f0E-sm-RPE">
+                <rect key="frame" x="0.0" y="0.0" width="540" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-Oj-E2O">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="218"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wnk-oP-n1K">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eXJ-Oj-E2O" secondAttribute="trailing" id="DNU-hz-C3h"/>
+                    <constraint firstAttribute="bottom" secondItem="eXJ-Oj-E2O" secondAttribute="bottom" id="Tn9-aF-ZM2"/>
+                    <constraint firstItem="eXJ-Oj-E2O" firstAttribute="leading" secondItem="f0E-sm-RPE" secondAttribute="leading" id="dYj-r3-0wb"/>
+                    <constraint firstItem="eXJ-Oj-E2O" firstAttribute="top" secondItem="f0E-sm-RPE" secondAttribute="top" id="gWc-Cx-yGB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionFlowLayout" destination="Wnk-oP-n1K" id="O8m-rI-dBv"/>
+                <outlet property="collectionView" destination="eXJ-Oj-E2O" id="y0l-1n-DBv"/>
+            </connections>
+            <point key="canvasLocation" x="-521" y="128"/>
+        </tableViewCell>
+    </objects>
+</document>

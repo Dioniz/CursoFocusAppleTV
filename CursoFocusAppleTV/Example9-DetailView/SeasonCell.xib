@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-Thin.ttf">
+            <string>WorkSans-Thin</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="nXd-Fd-Zji" customClass="SeasonCell" customModule="CursoAppleTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="237" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temporada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sto-9K-klC">
+                        <rect key="frame" x="20" y="0.0" width="197" height="64"/>
+                        <fontDescription key="fontDescription" name="WorkSans-Thin" family="Work Sans" pointSize="28"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ABS-cS-Osj"/>
+            <constraints>
+                <constraint firstItem="sto-9K-klC" firstAttribute="leading" secondItem="nXd-Fd-Zji" secondAttribute="leading" constant="20" id="Arz-sS-iTb"/>
+                <constraint firstAttribute="trailing" secondItem="sto-9K-klC" secondAttribute="trailing" constant="20" id="UvP-NX-s3x"/>
+                <constraint firstItem="sto-9K-klC" firstAttribute="top" secondItem="nXd-Fd-Zji" secondAttribute="top" id="qD5-kX-SgD"/>
+                <constraint firstAttribute="bottom" secondItem="sto-9K-klC" secondAttribute="bottom" id="yts-9j-Qzf"/>
+            </constraints>
+            <connections>
+                <outlet property="seasonLabel" destination="sto-9K-klC" id="2KN-Ew-qYk"/>
+            </connections>
+            <point key="canvasLocation" x="69" y="107"/>
+        </collectionViewCell>
+    </objects>
+</document>

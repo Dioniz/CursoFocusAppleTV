@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WorkSans-ExtraLight.ttf">
+            <string>WorkSans-ExtraLight</string>
+        </array>
+        <array key="WorkSans-Thin.ttf">
+            <string>WorkSans-Thin</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainMenuItemCollectionViewCell" id="xTn-to-Sm8" customClass="MainMenuItemCollectionViewCell" customModule="CursoFocusAppleTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejt-h8-cDH">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="68"/>
+                        <fontDescription key="fontDescription" name="WorkSans-Thin" family="Work Sans" pointSize="48"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzB-B4-g5T">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="68"/>
+                        <fontDescription key="fontDescription" name="WorkSans-ExtraLight" family="Work Sans" pointSize="48"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                        <state key="normal" title="MenuItem"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="9po-W3-Gac"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ejt-h8-cDH" secondAttribute="trailing" id="27q-xp-0Ta"/>
+                <constraint firstItem="TzB-B4-g5T" firstAttribute="top" secondItem="xTn-to-Sm8" secondAttribute="top" id="61u-MA-8sr"/>
+                <constraint firstItem="Ejt-h8-cDH" firstAttribute="leading" secondItem="xTn-to-Sm8" secondAttribute="leading" id="9c0-94-9Ym"/>
+                <constraint firstItem="TzB-B4-g5T" firstAttribute="top" secondItem="xTn-to-Sm8" secondAttribute="top" id="EgF-zl-rJk"/>
+                <constraint firstAttribute="bottom" secondItem="TzB-B4-g5T" secondAttribute="bottom" id="Hh5-jP-Ocg"/>
+                <constraint firstItem="Ejt-h8-cDH" firstAttribute="top" secondItem="xTn-to-Sm8" secondAttribute="top" id="Hjr-kF-xhR"/>
+                <constraint firstAttribute="bottom" secondItem="Ejt-h8-cDH" secondAttribute="bottom" id="MS8-ze-TAY"/>
+                <constraint firstItem="TzB-B4-g5T" firstAttribute="leading" secondItem="xTn-to-Sm8" secondAttribute="leading" id="Oj0-IC-rmd"/>
+                <constraint firstAttribute="trailing" secondItem="TzB-B4-g5T" secondAttribute="trailing" id="Omk-a3-moO"/>
+                <constraint firstAttribute="trailing" secondItem="TzB-B4-g5T" secondAttribute="trailing" id="PRz-97-K0K"/>
+                <constraint firstAttribute="bottom" secondItem="TzB-B4-g5T" secondAttribute="bottom" id="Y1C-cU-bgl"/>
+                <constraint firstItem="TzB-B4-g5T" firstAttribute="leading" secondItem="xTn-to-Sm8" secondAttribute="leading" id="mZS-9c-KRS"/>
+            </constraints>
+            <size key="customSize" width="187" height="68"/>
+            <connections>
+                <outlet property="titleButton" destination="TzB-B4-g5T" id="MzB-x0-l02"/>
+                <outlet property="titleLabel" destination="Ejt-h8-cDH" id="IZY-gr-94k"/>
+            </connections>
+            <point key="canvasLocation" x="-586" y="-65"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Option1MenuView" customModule="CursoAppleTV" customModuleProvider="target">
+            <connections>
+                <outlet property="parentView" destination="iN0-l3-epB" id="cd4-QK-x8M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLA-ha-qS4">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Won-C3-a8q">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="prominent"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99J-IH-2YD">
+                    <rect key="frame" x="1632" y="950" width="192" height="86"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dka-Hf-hqP">
+                    <rect key="frame" x="96" y="950" width="192" height="86"/>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWu-fW-s4W">
+                    <rect key="frame" x="96" y="76" width="1728" height="230"/>
+                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pmt-tb-8Ig"/>
+            <constraints>
+                <constraint firstItem="GWu-fW-s4W" firstAttribute="leading" secondItem="Pmt-tb-8Ig" secondAttribute="leading" constant="16" id="0ls-oh-Gih"/>
+                <constraint firstItem="GWu-fW-s4W" firstAttribute="top" secondItem="Pmt-tb-8Ig" secondAttribute="top" constant="16" id="6FU-9S-pcB"/>
+                <constraint firstAttribute="bottom" secondItem="CLA-ha-qS4" secondAttribute="bottom" id="BPk-ft-7uN"/>
+                <constraint firstItem="dka-Hf-hqP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GWu-fW-s4W" secondAttribute="bottom" constant="16" id="E8v-9h-Lcf"/>
+                <constraint firstItem="99J-IH-2YD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GWu-fW-s4W" secondAttribute="bottom" constant="16" id="KEH-cy-pYr"/>
+                <constraint firstItem="Pmt-tb-8Ig" firstAttribute="trailing" secondItem="GWu-fW-s4W" secondAttribute="trailing" constant="16" id="Kgv-qS-Owq"/>
+                <constraint firstItem="CLA-ha-qS4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RW5-NF-6Cu"/>
+                <constraint firstItem="dka-Hf-hqP" firstAttribute="bottom" secondItem="Pmt-tb-8Ig" secondAttribute="bottom" constant="16" id="VAP-u4-784"/>
+                <constraint firstItem="99J-IH-2YD" firstAttribute="bottom" secondItem="Pmt-tb-8Ig" secondAttribute="bottom" constant="16" id="do9-EM-MmB"/>
+                <constraint firstItem="CLA-ha-qS4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hwS-TI-MW8"/>
+                <constraint firstItem="Pmt-tb-8Ig" firstAttribute="trailing" secondItem="99J-IH-2YD" secondAttribute="trailing" constant="16" id="kCo-7s-Jm9"/>
+                <constraint firstItem="dka-Hf-hqP" firstAttribute="leading" secondItem="Pmt-tb-8Ig" secondAttribute="leading" constant="16" id="ltn-Yh-6bc"/>
+                <constraint firstAttribute="trailing" secondItem="CLA-ha-qS4" secondAttribute="trailing" id="ygc-z9-FHi"/>
+            </constraints>
+            <point key="canvasLocation" x="-213" y="-108"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="21507" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomStackView" customModule="CursoAppleTV" customModuleProvider="target">
+            <connections>
+                <outlet property="button1" destination="8YS-Zl-xGt" id="5bN-jc-XPv"/>
+                <outlet property="button2" destination="gab-hA-Ecc" id="P66-ue-EsR"/>
+                <outlet property="button3" destination="2ct-Qh-jSF" id="KfE-OU-xeo"/>
+                <outlet property="parentView" destination="2rW-K9-tFe" id="pon-T5-So3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2rW-K9-tFe">
+            <rect key="frame" x="0.0" y="0.0" width="1342" height="382"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JHa-nq-fbE">
+                    <rect key="frame" x="0.0" y="0.0" width="1342" height="382"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YS-Zl-xGt">
+                            <rect key="frame" x="0.0" y="0.0" width="434" height="382"/>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button 1"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gab-hA-Ecc">
+                            <rect key="frame" x="454" y="0.0" width="434" height="382"/>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button 2"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ct-Qh-jSF" userLabel="Button3">
+                            <rect key="frame" x="908" y="0.0" width="434" height="382"/>
+                            <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button 3"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JHa-nq-fbE" firstAttribute="leading" secondItem="2rW-K9-tFe" secondAttribute="leading" id="5oE-qZ-lDP"/>
+                <constraint firstItem="JHa-nq-fbE" firstAttribute="top" secondItem="2rW-K9-tFe" secondAttribute="top" id="5xK-0V-Q9r"/>
+                <constraint firstAttribute="trailing" secondItem="JHa-nq-fbE" secondAttribute="trailing" id="L1x-mW-c6k"/>
+                <constraint firstAttribute="bottom" secondItem="JHa-nq-fbE" secondAttribute="bottom" id="wDa-9X-WKI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-201" y="-594"/>
+        </view>
+    </objects>
+</document>

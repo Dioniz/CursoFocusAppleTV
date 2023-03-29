@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CursoFocusAppleTV
+//  CursoAppleTV
 //
-//  Created by Fran Dioniz on 28/3/23.
+//  Created by Fran Dioniz on 9/3/23.
 //
 
 import UIKit
@@ -12,9 +12,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         // Override point for customization after application launch.
+
+        let mainView = MainBuilder.assembleModule()
+        let navController = UINavigationController(rootViewController: mainView)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+
         return true
     }
 

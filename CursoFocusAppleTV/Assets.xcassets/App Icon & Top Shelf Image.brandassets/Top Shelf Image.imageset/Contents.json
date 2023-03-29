@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "movie-background.jpeg",
       "idiom" : "tv",
       "scale" : "1x"
     },

@@ -7,20 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DDF0489A29D2EBFA00E2BDC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0489929D2EBFA00E2BDC5 /* AppDelegate.swift */; };
-		DDF0489C29D2EBFA00E2BDC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0489B29D2EBFA00E2BDC5 /* ViewController.swift */; };
-		DDF0489F29D2EBFA00E2BDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF0489D29D2EBFA00E2BDC5 /* Main.storyboard */; };
-		DDF048A129D2EBFB00E2BDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF048A029D2EBFB00E2BDC5 /* Assets.xcassets */; };
-		DDF048A429D2EBFB00E2BDC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF048A229D2EBFB00E2BDC5 /* LaunchScreen.storyboard */; };
+		DD5A9B6129D381E20036CEAA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A9B6029D381E20036CEAA /* ProfileView.swift */; };
+		DD5A9B6329D381EE0036CEAA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5A9B6229D381EE0036CEAA /* Profile.storyboard */; };
+		DD5A9B6529D382190036CEAA /* ProfileCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A9B6429D382190036CEAA /* ProfileCollectionView.swift */; };
+		DD5A9B6729D382330036CEAA /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A9B6629D382330036CEAA /* ProfileCell.swift */; };
+		DD5A9B6929D3828B0036CEAA /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A9B6829D3828B0036CEAA /* UIImage+Extension.swift */; };
+		DD5A9B6B29D382E50036CEAA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5A9B6A29D382E50036CEAA /* UserProfile.swift */; };
+		DDF0490B29D2EC4A00E2BDC5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048AB29D2EC4600E2BDC5 /* DetailView.swift */; };
+		DDF0490C29D2EC4A00E2BDC5 /* SelectorSeasonCollectionDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048AC29D2EC4600E2BDC5 /* SelectorSeasonCollectionDelegates.swift */; };
+		DDF0490D29D2EC4A00E2BDC5 /* SeasonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048AD29D2EC4600E2BDC5 /* SeasonsView.xib */; };
+		DDF0490E29D2EC4A00E2BDC5 /* SeasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048AE29D2EC4600E2BDC5 /* SeasonCell.swift */; };
+		DDF0490F29D2EC4A00E2BDC5 /* SeasonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048AF29D2EC4600E2BDC5 /* SeasonCell.xib */; };
+		DDF0491029D2EC4A00E2BDC5 /* EpisodesCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048B029D2EC4600E2BDC5 /* EpisodesCollectionDelegate.swift */; };
+		DDF0491129D2EC4A00E2BDC5 /* Episodio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048B129D2EC4600E2BDC5 /* Episodio.swift */; };
+		DDF0491229D2EC4A00E2BDC5 /* SeasonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048B229D2EC4600E2BDC5 /* SeasonsView.swift */; };
+		DDF0491329D2EC4A00E2BDC5 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048B329D2EC4600E2BDC5 /* DateExtension.swift */; };
+		DDF0491429D2EC4A00E2BDC5 /* TVShowDummyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048B629D2EC4600E2BDC5 /* TVShowDummyViewCell.swift */; };
+		DDF0491529D2EC4A00E2BDC5 /* TVGuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048B729D2EC4600E2BDC5 /* TVGuideCell.swift */; };
+		DDF0491629D2EC4A00E2BDC5 /* TVShowViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048B829D2EC4600E2BDC5 /* TVShowViewCell.xib */; };
+		DDF0491729D2EC4A00E2BDC5 /* TVShowDummyViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048B929D2EC4600E2BDC5 /* TVShowDummyViewCell.xib */; };
+		DDF0491829D2EC4A00E2BDC5 /* TVGuideCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048BA29D2EC4600E2BDC5 /* TVGuideCell.xib */; };
+		DDF0491929D2EC4A00E2BDC5 /* TVShowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048BB29D2EC4600E2BDC5 /* TVShowViewCell.swift */; };
+		DDF0491A29D2EC4A00E2BDC5 /* TVGuideHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048BD29D2EC4600E2BDC5 /* TVGuideHeaderCell.swift */; };
+		DDF0491B29D2EC4A00E2BDC5 /* TVGuideHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048BE29D2EC4600E2BDC5 /* TVGuideHeaderCell.xib */; };
+		DDF0491C29D2EC4A00E2BDC5 /* ChannelCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048C029D2EC4600E2BDC5 /* ChannelCellView.swift */; };
+		DDF0491D29D2EC4A00E2BDC5 /* ChannelCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048C129D2EC4600E2BDC5 /* ChannelCellView.xib */; };
+		DDF0491E29D2EC4A00E2BDC5 /* TVGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048C229D2EC4600E2BDC5 /* TVGuideView.swift */; };
+		DDF0491F29D2EC4A00E2BDC5 /* TVGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF048C329D2EC4600E2BDC5 /* TVGuide.storyboard */; };
+		DDF0492029D2EC4A00E2BDC5 /* InfoTVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048C529D2EC4600E2BDC5 /* InfoTVView.swift */; };
+		DDF0492129D2EC4A00E2BDC5 /* InfoTvCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048C729D2EC4600E2BDC5 /* InfoTvCell.swift */; };
+		DDF0492229D2EC4A00E2BDC5 /* InfoTvCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048C829D2EC4600E2BDC5 /* InfoTvCell.xib */; };
+		DDF0492329D2EC4A00E2BDC5 /* InfoTVView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048C929D2EC4600E2BDC5 /* InfoTVView.xib */; };
+		DDF0492429D2EC4A00E2BDC5 /* TableViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048CC29D2EC4600E2BDC5 /* TableViewBuilder.swift */; };
+		DDF0492529D2EC4A00E2BDC5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048CD29D2EC4600E2BDC5 /* CustomButton.swift */; };
+		DDF0492629D2EC4A00E2BDC5 /* Example3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048CF29D2EC4600E2BDC5 /* Example3View.swift */; };
+		DDF0492929D2EC4A00E2BDC5 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048D329D2EC4600E2BDC5 /* CustomStackView.swift */; };
+		DDF0492A29D2EC4A00E2BDC5 /* ImageExpandableCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048D429D2EC4700E2BDC5 /* ImageExpandableCollectionCell.swift */; };
+		DDF0492B29D2EC4A00E2BDC5 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048D529D2EC4700E2BDC5 /* StringExtension.swift */; };
+		DDF0492C29D2EC4A00E2BDC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF048D729D2EC4700E2BDC5 /* LaunchScreen.storyboard */; };
+		DDF0492D29D2EC4A00E2BDC5 /* Option1MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048DA29D2EC4700E2BDC5 /* Option1MenuView.swift */; };
+		DDF0492E29D2EC4A00E2BDC5 /* Option1MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048DB29D2EC4700E2BDC5 /* Option1MenuView.xib */; };
+		DDF0492F29D2EC4A00E2BDC5 /* MenuLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048DC29D2EC4700E2BDC5 /* MenuLabelView.swift */; };
+		DDF0493029D2EC4A00E2BDC5 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048DD29D2EC4700E2BDC5 /* MenuView.swift */; };
+		DDF0493129D2EC4A00E2BDC5 /* MenuLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048DE29D2EC4700E2BDC5 /* MenuLabelView.xib */; };
+		DDF0493229D2EC4A00E2BDC5 /* Example1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048E029D2EC4700E2BDC5 /* Example1View.swift */; };
+		DDF0493329D2EC4A00E2BDC5 /* FocusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048E129D2EC4700E2BDC5 /* FocusableView.swift */; };
+		DDF0493429D2EC4A00E2BDC5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF048E229D2EC4700E2BDC5 /* Colors.xcassets */; };
+		DDF0493529D2EC4A00E2BDC5 /* CustomStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048E329D2EC4700E2BDC5 /* CustomStackView.xib */; };
+		DDF0493629D2EC4A00E2BDC5 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048E429D2EC4800E2BDC5 /* ImageCollectionCell.swift */; };
+		DDF0493729D2EC4A00E2BDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDF048E529D2EC4800E2BDC5 /* Assets.xcassets */; };
+		DDF0493B29D2EC4A00E2BDC5 /* MainBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048EB29D2EC4800E2BDC5 /* MainBuilder.swift */; };
+		DDF0493C29D2EC4A00E2BDC5 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048EC29D2EC4800E2BDC5 /* MainProtocols.swift */; };
+		DDF0493D29D2EC4A00E2BDC5 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048ED29D2EC4800E2BDC5 /* MainPresenter.swift */; };
+		DDF0493E29D2EC4A00E2BDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDF048EE29D2EC4800E2BDC5 /* Main.storyboard */; };
+		DDF0493F29D2EC4A00E2BDC5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048EF29D2EC4800E2BDC5 /* MainRouter.swift */; };
+		DDF0494029D2EC4A00E2BDC5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048F029D2EC4800E2BDC5 /* MainView.swift */; };
+		DDF0494129D2EC4A00E2BDC5 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048F229D2EC4800E2BDC5 /* CollectionDetailView.swift */; };
+		DDF0494229D2EC4A00E2BDC5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048F329D2EC4800E2BDC5 /* CollectionViewController.swift */; };
+		DDF0494329D2EC4A00E2BDC5 /* MainMenuItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF048F629D2EC4800E2BDC5 /* MainMenuItemCollectionViewCell.xib */; };
+		DDF0494429D2EC4A00E2BDC5 /* HomeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048F729D2EC4800E2BDC5 /* HomeMenuView.swift */; };
+		DDF0494529D2EC4A00E2BDC5 /* MainMenuItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048F829D2EC4800E2BDC5 /* MainMenuItemCollectionViewCell.swift */; };
+		DDF0494629D2EC4A00E2BDC5 /* Example10View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048F929D2EC4800E2BDC5 /* Example10View.swift */; };
+		DDF0494729D2EC4A00E2BDC5 /* UIViewFocusBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048FA29D2EC4800E2BDC5 /* UIViewFocusBorder.swift */; };
+		DDF0494829D2EC4A00E2BDC5 /* Example4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048FC29D2EC4800E2BDC5 /* Example4View.swift */; };
+		DDF0494929D2EC4A00E2BDC5 /* Example2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048FE29D2EC4900E2BDC5 /* Example2View.swift */; };
+		DDF0494A29D2EC4A00E2BDC5 /* BaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF048FF29D2EC4900E2BDC5 /* BaseBuilder.swift */; };
+		DDF0494B29D2EC4A00E2BDC5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0490129D2EC4900E2BDC5 /* TableViewCell.swift */; };
+		DDF0494C29D2EC4A00E2BDC5 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF0490229D2EC4900E2BDC5 /* TableViewCell.xib */; };
+		DDF0494D29D2EC4A00E2BDC5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0490329D2EC4900E2BDC5 /* TableViewController.swift */; };
+		DDF0494E29D2EC4A00E2BDC5 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0490429D2EC4900E2BDC5 /* UIStackViewExtension.swift */; };
+		DDF0494F29D2EC4A00E2BDC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0490529D2EC4900E2BDC5 /* Constants.swift */; };
+		DDF0495029D2EC4A00E2BDC5 /* FocusGuideDebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0490629D2EC4900E2BDC5 /* FocusGuideDebugView.swift */; };
+		DDF0495129D2EC4A00E2BDC5 /* ImageExpandableCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF0490729D2EC4900E2BDC5 /* ImageExpandableCollectionCell.xib */; };
+		DDF0495229D2EC4A00E2BDC5 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0490829D2EC4900E2BDC5 /* UIViewControllerExtension.swift */; };
+		DDF0495329D2EC4A00E2BDC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0490929D2EC4A00E2BDC5 /* AppDelegate.swift */; };
+		DDF0495429D2EC4A00E2BDC5 /* ImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF0490A29D2EC4A00E2BDC5 /* ImageCollectionCell.xib */; };
+		DDF0495729D2EC6000E2BDC5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DDF0495629D2EC6000E2BDC5 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD5A9B6029D381E20036CEAA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DD5A9B6229D381EE0036CEAA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		DD5A9B6429D382190036CEAA /* ProfileCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionView.swift; sourceTree = "<group>"; };
+		DD5A9B6629D382330036CEAA /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		DD5A9B6829D3828B0036CEAA /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DD5A9B6A29D382E50036CEAA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		DDF0489629D2EBFA00E2BDC5 /* CursoFocusAppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoFocusAppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDF0489929D2EBFA00E2BDC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDF0489B29D2EBFA00E2BDC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DDF0489E29D2EBFA00E2BDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DDF048A029D2EBFB00E2BDC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DDF048A329D2EBFB00E2BDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDF048AB29D2EC4600E2BDC5 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DDF048AC29D2EC4600E2BDC5 /* SelectorSeasonCollectionDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectorSeasonCollectionDelegates.swift; sourceTree = "<group>"; };
+		DDF048AD29D2EC4600E2BDC5 /* SeasonsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeasonsView.xib; sourceTree = "<group>"; };
+		DDF048AE29D2EC4600E2BDC5 /* SeasonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonCell.swift; sourceTree = "<group>"; };
+		DDF048AF29D2EC4600E2BDC5 /* SeasonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeasonCell.xib; sourceTree = "<group>"; };
+		DDF048B029D2EC4600E2BDC5 /* EpisodesCollectionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpisodesCollectionDelegate.swift; sourceTree = "<group>"; };
+		DDF048B129D2EC4600E2BDC5 /* Episodio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episodio.swift; sourceTree = "<group>"; };
+		DDF048B229D2EC4600E2BDC5 /* SeasonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsView.swift; sourceTree = "<group>"; };
+		DDF048B329D2EC4600E2BDC5 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		DDF048B629D2EC4600E2BDC5 /* TVShowDummyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShowDummyViewCell.swift; sourceTree = "<group>"; };
+		DDF048B729D2EC4600E2BDC5 /* TVGuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVGuideCell.swift; sourceTree = "<group>"; };
+		DDF048B829D2EC4600E2BDC5 /* TVShowViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVShowViewCell.xib; sourceTree = "<group>"; };
+		DDF048B929D2EC4600E2BDC5 /* TVShowDummyViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVShowDummyViewCell.xib; sourceTree = "<group>"; };
+		DDF048BA29D2EC4600E2BDC5 /* TVGuideCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuideCell.xib; sourceTree = "<group>"; };
+		DDF048BB29D2EC4600E2BDC5 /* TVShowViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVShowViewCell.swift; sourceTree = "<group>"; };
+		DDF048BD29D2EC4600E2BDC5 /* TVGuideHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVGuideHeaderCell.swift; sourceTree = "<group>"; };
+		DDF048BE29D2EC4600E2BDC5 /* TVGuideHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TVGuideHeaderCell.xib; sourceTree = "<group>"; };
+		DDF048C029D2EC4600E2BDC5 /* ChannelCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelCellView.swift; sourceTree = "<group>"; };
+		DDF048C129D2EC4600E2BDC5 /* ChannelCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelCellView.xib; sourceTree = "<group>"; };
+		DDF048C229D2EC4600E2BDC5 /* TVGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVGuideView.swift; sourceTree = "<group>"; };
+		DDF048C329D2EC4600E2BDC5 /* TVGuide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TVGuide.storyboard; sourceTree = "<group>"; };
+		DDF048C529D2EC4600E2BDC5 /* InfoTVView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTVView.swift; sourceTree = "<group>"; };
+		DDF048C729D2EC4600E2BDC5 /* InfoTvCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoTvCell.swift; sourceTree = "<group>"; };
+		DDF048C829D2EC4600E2BDC5 /* InfoTvCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTvCell.xib; sourceTree = "<group>"; };
+		DDF048C929D2EC4600E2BDC5 /* InfoTVView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoTVView.xib; sourceTree = "<group>"; };
+		DDF048CC29D2EC4600E2BDC5 /* TableViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewBuilder.swift; sourceTree = "<group>"; };
+		DDF048CD29D2EC4600E2BDC5 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		DDF048CF29D2EC4600E2BDC5 /* Example3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example3View.swift; sourceTree = "<group>"; };
+		DDF048D329D2EC4600E2BDC5 /* CustomStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		DDF048D429D2EC4700E2BDC5 /* ImageExpandableCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExpandableCollectionCell.swift; sourceTree = "<group>"; };
+		DDF048D529D2EC4700E2BDC5 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		DDF048D829D2EC4700E2BDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDF048DA29D2EC4700E2BDC5 /* Option1MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option1MenuView.swift; sourceTree = "<group>"; };
+		DDF048DB29D2EC4700E2BDC5 /* Option1MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Option1MenuView.xib; sourceTree = "<group>"; };
+		DDF048DC29D2EC4700E2BDC5 /* MenuLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuLabelView.swift; sourceTree = "<group>"; };
+		DDF048DD29D2EC4700E2BDC5 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		DDF048DE29D2EC4700E2BDC5 /* MenuLabelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuLabelView.xib; sourceTree = "<group>"; };
+		DDF048E029D2EC4700E2BDC5 /* Example1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example1View.swift; sourceTree = "<group>"; };
+		DDF048E129D2EC4700E2BDC5 /* FocusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusableView.swift; sourceTree = "<group>"; };
+		DDF048E229D2EC4700E2BDC5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DDF048E329D2EC4700E2BDC5 /* CustomStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomStackView.xib; sourceTree = "<group>"; };
+		DDF048E429D2EC4800E2BDC5 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		DDF048E529D2EC4800E2BDC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDF048EB29D2EC4800E2BDC5 /* MainBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBuilder.swift; sourceTree = "<group>"; };
+		DDF048EC29D2EC4800E2BDC5 /* MainProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		DDF048ED29D2EC4800E2BDC5 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		DDF048EE29D2EC4800E2BDC5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DDF048EF29D2EC4800E2BDC5 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		DDF048F029D2EC4800E2BDC5 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DDF048F229D2EC4800E2BDC5 /* CollectionDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
+		DDF048F329D2EC4800E2BDC5 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		DDF048F629D2EC4800E2BDC5 /* MainMenuItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		DDF048F729D2EC4800E2BDC5 /* HomeMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMenuView.swift; sourceTree = "<group>"; };
+		DDF048F829D2EC4800E2BDC5 /* MainMenuItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		DDF048F929D2EC4800E2BDC5 /* Example10View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example10View.swift; sourceTree = "<group>"; };
+		DDF048FA29D2EC4800E2BDC5 /* UIViewFocusBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewFocusBorder.swift; sourceTree = "<group>"; };
+		DDF048FC29D2EC4800E2BDC5 /* Example4View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example4View.swift; sourceTree = "<group>"; };
+		DDF048FE29D2EC4900E2BDC5 /* Example2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example2View.swift; sourceTree = "<group>"; };
+		DDF048FF29D2EC4900E2BDC5 /* BaseBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseBuilder.swift; sourceTree = "<group>"; };
+		DDF0490129D2EC4900E2BDC5 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		DDF0490229D2EC4900E2BDC5 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		DDF0490329D2EC4900E2BDC5 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DDF0490429D2EC4900E2BDC5 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		DDF0490529D2EC4900E2BDC5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DDF0490629D2EC4900E2BDC5 /* FocusGuideDebugView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusGuideDebugView.swift; sourceTree = "<group>"; };
+		DDF0490729D2EC4900E2BDC5 /* ImageExpandableCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageExpandableCollectionCell.xib; sourceTree = "<group>"; };
+		DDF0490829D2EC4900E2BDC5 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		DDF0490929D2EC4A00E2BDC5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDF0490A29D2EC4A00E2BDC5 /* ImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,12 +169,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF0495729D2EC6000E2BDC5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD5A9B5F29D381D40036CEAA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DD5A9B6029D381E20036CEAA /* ProfileView.swift */,
+				DD5A9B6229D381EE0036CEAA /* Profile.storyboard */,
+				DD5A9B6429D382190036CEAA /* ProfileCollectionView.swift */,
+				DD5A9B6629D382330036CEAA /* ProfileCell.swift */,
+				DD5A9B6829D3828B0036CEAA /* UIImage+Extension.swift */,
+				DD5A9B6A29D382E50036CEAA /* UserProfile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		DDF0488D29D2EBFA00E2BDC5 = {
 			isa = PBXGroup;
 			children = (
@@ -53,13 +208,238 @@
 		DDF0489829D2EBFA00E2BDC5 /* CursoFocusAppleTV */ = {
 			isa = PBXGroup;
 			children = (
-				DDF0489929D2EBFA00E2BDC5 /* AppDelegate.swift */,
-				DDF0489B29D2EBFA00E2BDC5 /* ViewController.swift */,
-				DDF0489D29D2EBFA00E2BDC5 /* Main.storyboard */,
-				DDF048A029D2EBFB00E2BDC5 /* Assets.xcassets */,
-				DDF048A229D2EBFB00E2BDC5 /* LaunchScreen.storyboard */,
+				DD5A9B5F29D381D40036CEAA /* Profile */,
+				DDF0490929D2EC4A00E2BDC5 /* AppDelegate.swift */,
+				DDF048E529D2EC4800E2BDC5 /* Assets.xcassets */,
+				DDF048D629D2EC4700E2BDC5 /* Base.lproj */,
+				DDF048FF29D2EC4900E2BDC5 /* BaseBuilder.swift */,
+				DDF048E229D2EC4700E2BDC5 /* Colors.xcassets */,
+				DDF0490529D2EC4900E2BDC5 /* Constants.swift */,
+				DDF048CD29D2EC4600E2BDC5 /* CustomButton.swift */,
+				DDF048D329D2EC4600E2BDC5 /* CustomStackView.swift */,
+				DDF048E329D2EC4700E2BDC5 /* CustomStackView.xib */,
+				DDF048B329D2EC4600E2BDC5 /* DateExtension.swift */,
+				DDF048DF29D2EC4700E2BDC5 /* Example1-GridButtons */,
+				DDF048FD29D2EC4900E2BDC5 /* Example2-UIFocusGuideBidirectional */,
+				DDF048CE29D2EC4600E2BDC5 /* Example3-FocusInCustomView */,
+				DDF048FB29D2EC4800E2BDC5 /* Example4-UpdateFocusInTableView */,
+				DDF048F129D2EC4800E2BDC5 /* Example5-CollectionView */,
+				DDF0490029D2EC4900E2BDC5 /* Example6-TableView+CollectionView */,
+				DDF048D929D2EC4700E2BDC5 /* Example7-ListDetail */,
+				DDF048B429D2EC4600E2BDC5 /* Example8-GuideTV */,
+				DDF048AA29D2EC4600E2BDC5 /* Example9-DetailView */,
+				DDF048F429D2EC4800E2BDC5 /* Example10-HomeView */,
+				DDF048E129D2EC4700E2BDC5 /* FocusableView.swift */,
+				DDF0490629D2EC4900E2BDC5 /* FocusGuideDebugView.swift */,
+				DDF048E429D2EC4800E2BDC5 /* ImageCollectionCell.swift */,
+				DDF0490A29D2EC4A00E2BDC5 /* ImageCollectionCell.xib */,
+				DDF048D429D2EC4700E2BDC5 /* ImageExpandableCollectionCell.swift */,
+				DDF0490729D2EC4900E2BDC5 /* ImageExpandableCollectionCell.xib */,
+				DDF048EA29D2EC4800E2BDC5 /* Main */,
+				DDF048D529D2EC4700E2BDC5 /* StringExtension.swift */,
+				DDF048CA29D2EC4600E2BDC5 /* Tables */,
+				DDF0490429D2EC4900E2BDC5 /* UIStackViewExtension.swift */,
+				DDF0490829D2EC4900E2BDC5 /* UIViewControllerExtension.swift */,
 			);
 			path = CursoFocusAppleTV;
+			sourceTree = "<group>";
+		};
+		DDF048AA29D2EC4600E2BDC5 /* Example9-DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048AB29D2EC4600E2BDC5 /* DetailView.swift */,
+				DDF048AC29D2EC4600E2BDC5 /* SelectorSeasonCollectionDelegates.swift */,
+				DDF048AD29D2EC4600E2BDC5 /* SeasonsView.xib */,
+				DDF048AE29D2EC4600E2BDC5 /* SeasonCell.swift */,
+				DDF048AF29D2EC4600E2BDC5 /* SeasonCell.xib */,
+				DDF048B029D2EC4600E2BDC5 /* EpisodesCollectionDelegate.swift */,
+				DDF048B129D2EC4600E2BDC5 /* Episodio.swift */,
+				DDF048B229D2EC4600E2BDC5 /* SeasonsView.swift */,
+			);
+			path = "Example9-DetailView";
+			sourceTree = "<group>";
+		};
+		DDF048B429D2EC4600E2BDC5 /* Example8-GuideTV */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048B529D2EC4600E2BDC5 /* Cells */,
+				DDF048C229D2EC4600E2BDC5 /* TVGuideView.swift */,
+				DDF048C329D2EC4600E2BDC5 /* TVGuide.storyboard */,
+				DDF048C429D2EC4600E2BDC5 /* InfoTV */,
+			);
+			path = "Example8-GuideTV";
+			sourceTree = "<group>";
+		};
+		DDF048B529D2EC4600E2BDC5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048B629D2EC4600E2BDC5 /* TVShowDummyViewCell.swift */,
+				DDF048B729D2EC4600E2BDC5 /* TVGuideCell.swift */,
+				DDF048B829D2EC4600E2BDC5 /* TVShowViewCell.xib */,
+				DDF048B929D2EC4600E2BDC5 /* TVShowDummyViewCell.xib */,
+				DDF048BA29D2EC4600E2BDC5 /* TVGuideCell.xib */,
+				DDF048BB29D2EC4600E2BDC5 /* TVShowViewCell.swift */,
+				DDF048BC29D2EC4600E2BDC5 /* Header */,
+				DDF048BF29D2EC4600E2BDC5 /* Channels */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DDF048BC29D2EC4600E2BDC5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048BD29D2EC4600E2BDC5 /* TVGuideHeaderCell.swift */,
+				DDF048BE29D2EC4600E2BDC5 /* TVGuideHeaderCell.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		DDF048BF29D2EC4600E2BDC5 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048C029D2EC4600E2BDC5 /* ChannelCellView.swift */,
+				DDF048C129D2EC4600E2BDC5 /* ChannelCellView.xib */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		DDF048C429D2EC4600E2BDC5 /* InfoTV */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048C529D2EC4600E2BDC5 /* InfoTVView.swift */,
+				DDF048C629D2EC4600E2BDC5 /* Cells */,
+				DDF048C929D2EC4600E2BDC5 /* InfoTVView.xib */,
+			);
+			path = InfoTV;
+			sourceTree = "<group>";
+		};
+		DDF048C629D2EC4600E2BDC5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048C729D2EC4600E2BDC5 /* InfoTvCell.swift */,
+				DDF048C829D2EC4600E2BDC5 /* InfoTvCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DDF048CA29D2EC4600E2BDC5 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048CB29D2EC4600E2BDC5 /* Example1 */,
+				DDF048CC29D2EC4600E2BDC5 /* TableViewBuilder.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		DDF048CB29D2EC4600E2BDC5 /* Example1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Example1;
+			sourceTree = "<group>";
+		};
+		DDF048CE29D2EC4600E2BDC5 /* Example3-FocusInCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048CF29D2EC4600E2BDC5 /* Example3View.swift */,
+			);
+			path = "Example3-FocusInCustomView";
+			sourceTree = "<group>";
+		};
+		DDF048D629D2EC4700E2BDC5 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048D729D2EC4700E2BDC5 /* LaunchScreen.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		DDF048D929D2EC4700E2BDC5 /* Example7-ListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048DA29D2EC4700E2BDC5 /* Option1MenuView.swift */,
+				DDF048DB29D2EC4700E2BDC5 /* Option1MenuView.xib */,
+				DDF048DC29D2EC4700E2BDC5 /* MenuLabelView.swift */,
+				DDF048DD29D2EC4700E2BDC5 /* MenuView.swift */,
+				DDF048DE29D2EC4700E2BDC5 /* MenuLabelView.xib */,
+			);
+			path = "Example7-ListDetail";
+			sourceTree = "<group>";
+		};
+		DDF048DF29D2EC4700E2BDC5 /* Example1-GridButtons */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048E029D2EC4700E2BDC5 /* Example1View.swift */,
+			);
+			path = "Example1-GridButtons";
+			sourceTree = "<group>";
+		};
+		DDF048EA29D2EC4800E2BDC5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048EB29D2EC4800E2BDC5 /* MainBuilder.swift */,
+				DDF048EC29D2EC4800E2BDC5 /* MainProtocols.swift */,
+				DDF048ED29D2EC4800E2BDC5 /* MainPresenter.swift */,
+				DDF048EE29D2EC4800E2BDC5 /* Main.storyboard */,
+				DDF048EF29D2EC4800E2BDC5 /* MainRouter.swift */,
+				DDF048F029D2EC4800E2BDC5 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DDF048F129D2EC4800E2BDC5 /* Example5-CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048F229D2EC4800E2BDC5 /* CollectionDetailView.swift */,
+				DDF048F329D2EC4800E2BDC5 /* CollectionViewController.swift */,
+			);
+			path = "Example5-CollectionView";
+			sourceTree = "<group>";
+		};
+		DDF048F429D2EC4800E2BDC5 /* Example10-HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048F529D2EC4800E2BDC5 /* Menu */,
+				DDF048F929D2EC4800E2BDC5 /* Example10View.swift */,
+				DDF048FA29D2EC4800E2BDC5 /* UIViewFocusBorder.swift */,
+			);
+			path = "Example10-HomeView";
+			sourceTree = "<group>";
+		};
+		DDF048F529D2EC4800E2BDC5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048F629D2EC4800E2BDC5 /* MainMenuItemCollectionViewCell.xib */,
+				DDF048F729D2EC4800E2BDC5 /* HomeMenuView.swift */,
+				DDF048F829D2EC4800E2BDC5 /* MainMenuItemCollectionViewCell.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		DDF048FB29D2EC4800E2BDC5 /* Example4-UpdateFocusInTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048FC29D2EC4800E2BDC5 /* Example4View.swift */,
+			);
+			path = "Example4-UpdateFocusInTableView";
+			sourceTree = "<group>";
+		};
+		DDF048FD29D2EC4900E2BDC5 /* Example2-UIFocusGuideBidirectional */ = {
+			isa = PBXGroup;
+			children = (
+				DDF048FE29D2EC4900E2BDC5 /* Example2View.swift */,
+			);
+			path = "Example2-UIFocusGuideBidirectional";
+			sourceTree = "<group>";
+		};
+		DDF0490029D2EC4900E2BDC5 /* Example6-TableView+CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DDF0490129D2EC4900E2BDC5 /* TableViewCell.swift */,
+				DDF0490229D2EC4900E2BDC5 /* TableViewCell.xib */,
+				DDF0490329D2EC4900E2BDC5 /* TableViewController.swift */,
+			);
+			path = "Example6-TableView+CollectionView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +458,9 @@
 			dependencies = (
 			);
 			name = CursoFocusAppleTV;
+			packageProductDependencies = (
+				DDF0495629D2EC6000E2BDC5 /* SnapKit */,
+			);
 			productName = CursoFocusAppleTV;
 			productReference = DDF0489629D2EBFA00E2BDC5 /* CursoFocusAppleTV.app */;
 			productType = "com.apple.product-type.application";
@@ -94,6 +477,7 @@
 				TargetAttributes = {
 					DDF0489529D2EBFA00E2BDC5 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -106,6 +490,9 @@
 				Base,
 			);
 			mainGroup = DDF0488D29D2EBFA00E2BDC5;
+			packageReferences = (
+				DDF0495529D2EC6000E2BDC5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = DDF0489729D2EBFA00E2BDC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,9 +507,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF048A429D2EBFB00E2BDC5 /* LaunchScreen.storyboard in Resources */,
-				DDF048A129D2EBFB00E2BDC5 /* Assets.xcassets in Resources */,
-				DDF0489F29D2EBFA00E2BDC5 /* Main.storyboard in Resources */,
+				DDF0493129D2EC4A00E2BDC5 /* MenuLabelView.xib in Resources */,
+				DDF0494C29D2EC4A00E2BDC5 /* TableViewCell.xib in Resources */,
+				DDF0490F29D2EC4A00E2BDC5 /* SeasonCell.xib in Resources */,
+				DDF0491F29D2EC4A00E2BDC5 /* TVGuide.storyboard in Resources */,
+				DDF0492E29D2EC4A00E2BDC5 /* Option1MenuView.xib in Resources */,
+				DDF0491B29D2EC4A00E2BDC5 /* TVGuideHeaderCell.xib in Resources */,
+				DDF0490D29D2EC4A00E2BDC5 /* SeasonsView.xib in Resources */,
+				DDF0491D29D2EC4A00E2BDC5 /* ChannelCellView.xib in Resources */,
+				DDF0494329D2EC4A00E2BDC5 /* MainMenuItemCollectionViewCell.xib in Resources */,
+				DDF0491729D2EC4A00E2BDC5 /* TVShowDummyViewCell.xib in Resources */,
+				DDF0492229D2EC4A00E2BDC5 /* InfoTvCell.xib in Resources */,
+				DDF0495429D2EC4A00E2BDC5 /* ImageCollectionCell.xib in Resources */,
+				DD5A9B6329D381EE0036CEAA /* Profile.storyboard in Resources */,
+				DDF0491829D2EC4A00E2BDC5 /* TVGuideCell.xib in Resources */,
+				DDF0492329D2EC4A00E2BDC5 /* InfoTVView.xib in Resources */,
+				DDF0492C29D2EC4A00E2BDC5 /* LaunchScreen.storyboard in Resources */,
+				DDF0493529D2EC4A00E2BDC5 /* CustomStackView.xib in Resources */,
+				DDF0491629D2EC4A00E2BDC5 /* TVShowViewCell.xib in Resources */,
+				DDF0493729D2EC4A00E2BDC5 /* Assets.xcassets in Resources */,
+				DDF0495129D2EC4A00E2BDC5 /* ImageExpandableCollectionCell.xib in Resources */,
+				DDF0493E29D2EC4A00E2BDC5 /* Main.storyboard in Resources */,
+				DDF0493429D2EC4A00E2BDC5 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,26 +539,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDF0489C29D2EBFA00E2BDC5 /* ViewController.swift in Sources */,
-				DDF0489A29D2EBFA00E2BDC5 /* AppDelegate.swift in Sources */,
+				DD5A9B6729D382330036CEAA /* ProfileCell.swift in Sources */,
+				DDF0494E29D2EC4A00E2BDC5 /* UIStackViewExtension.swift in Sources */,
+				DDF0494029D2EC4A00E2BDC5 /* MainView.swift in Sources */,
+				DDF0491029D2EC4A00E2BDC5 /* EpisodesCollectionDelegate.swift in Sources */,
+				DDF0493C29D2EC4A00E2BDC5 /* MainProtocols.swift in Sources */,
+				DD5A9B6529D382190036CEAA /* ProfileCollectionView.swift in Sources */,
+				DDF0493229D2EC4A00E2BDC5 /* Example1View.swift in Sources */,
+				DDF0492D29D2EC4A00E2BDC5 /* Option1MenuView.swift in Sources */,
+				DDF0495329D2EC4A00E2BDC5 /* AppDelegate.swift in Sources */,
+				DDF0494529D2EC4A00E2BDC5 /* MainMenuItemCollectionViewCell.swift in Sources */,
+				DDF0492629D2EC4A00E2BDC5 /* Example3View.swift in Sources */,
+				DDF0492A29D2EC4A00E2BDC5 /* ImageExpandableCollectionCell.swift in Sources */,
+				DDF0491329D2EC4A00E2BDC5 /* DateExtension.swift in Sources */,
+				DDF0494429D2EC4A00E2BDC5 /* HomeMenuView.swift in Sources */,
+				DDF0493029D2EC4A00E2BDC5 /* MenuView.swift in Sources */,
+				DDF0494229D2EC4A00E2BDC5 /* CollectionViewController.swift in Sources */,
+				DD5A9B6B29D382E50036CEAA /* UserProfile.swift in Sources */,
+				DDF0495029D2EC4A00E2BDC5 /* FocusGuideDebugView.swift in Sources */,
+				DDF0490C29D2EC4A00E2BDC5 /* SelectorSeasonCollectionDelegates.swift in Sources */,
+				DDF0491529D2EC4A00E2BDC5 /* TVGuideCell.swift in Sources */,
+				DDF0492029D2EC4A00E2BDC5 /* InfoTVView.swift in Sources */,
+				DDF0491C29D2EC4A00E2BDC5 /* ChannelCellView.swift in Sources */,
+				DDF0493F29D2EC4A00E2BDC5 /* MainRouter.swift in Sources */,
+				DDF0491129D2EC4A00E2BDC5 /* Episodio.swift in Sources */,
+				DDF0493629D2EC4A00E2BDC5 /* ImageCollectionCell.swift in Sources */,
+				DDF0491229D2EC4A00E2BDC5 /* SeasonsView.swift in Sources */,
+				DDF0490E29D2EC4A00E2BDC5 /* SeasonCell.swift in Sources */,
+				DDF0493D29D2EC4A00E2BDC5 /* MainPresenter.swift in Sources */,
+				DDF0494629D2EC4A00E2BDC5 /* Example10View.swift in Sources */,
+				DD5A9B6129D381E20036CEAA /* ProfileView.swift in Sources */,
+				DDF0494A29D2EC4A00E2BDC5 /* BaseBuilder.swift in Sources */,
+				DDF0494929D2EC4A00E2BDC5 /* Example2View.swift in Sources */,
+				DDF0491E29D2EC4A00E2BDC5 /* TVGuideView.swift in Sources */,
+				DDF0492129D2EC4A00E2BDC5 /* InfoTvCell.swift in Sources */,
+				DDF0492429D2EC4A00E2BDC5 /* TableViewBuilder.swift in Sources */,
+				DDF0494829D2EC4A00E2BDC5 /* Example4View.swift in Sources */,
+				DDF0494129D2EC4A00E2BDC5 /* CollectionDetailView.swift in Sources */,
+				DDF0491429D2EC4A00E2BDC5 /* TVShowDummyViewCell.swift in Sources */,
+				DDF0492F29D2EC4A00E2BDC5 /* MenuLabelView.swift in Sources */,
+				DDF0493329D2EC4A00E2BDC5 /* FocusableView.swift in Sources */,
+				DD5A9B6929D3828B0036CEAA /* UIImage+Extension.swift in Sources */,
+				DDF0495229D2EC4A00E2BDC5 /* UIViewControllerExtension.swift in Sources */,
+				DDF0493B29D2EC4A00E2BDC5 /* MainBuilder.swift in Sources */,
+				DDF0492529D2EC4A00E2BDC5 /* CustomButton.swift in Sources */,
+				DDF0491A29D2EC4A00E2BDC5 /* TVGuideHeaderCell.swift in Sources */,
+				DDF0492929D2EC4A00E2BDC5 /* CustomStackView.swift in Sources */,
+				DDF0494729D2EC4A00E2BDC5 /* UIViewFocusBorder.swift in Sources */,
+				DDF0490B29D2EC4A00E2BDC5 /* DetailView.swift in Sources */,
+				DDF0492B29D2EC4A00E2BDC5 /* StringExtension.swift in Sources */,
+				DDF0491929D2EC4A00E2BDC5 /* TVShowViewCell.swift in Sources */,
+				DDF0494F29D2EC4A00E2BDC5 /* Constants.swift in Sources */,
+				DDF0494B29D2EC4A00E2BDC5 /* TableViewCell.swift in Sources */,
+				DDF0494D29D2EC4A00E2BDC5 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DDF0489D29D2EBFA00E2BDC5 /* Main.storyboard */ = {
+		DDF048D729D2EC4700E2BDC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DDF0489E29D2EBFA00E2BDC5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DDF048A229D2EBFB00E2BDC5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDF048A329D2EBFB00E2BDC5 /* Base */,
+				DDF048D829D2EC4700E2BDC5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -279,6 +728,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2JT6VPH94J;
@@ -294,6 +744,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.diodev.CursoFocusAppleTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
@@ -304,6 +755,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2JT6VPH94J;
@@ -346,6 +798,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDF0495529D2EC6000E2BDC5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDF0495629D2EC6000E2BDC5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDF0495529D2EC6000E2BDC5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDF0488E29D2EBFA00E2BDC5 /* Project object */;
 }
