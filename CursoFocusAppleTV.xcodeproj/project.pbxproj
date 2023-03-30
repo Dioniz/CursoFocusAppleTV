@@ -134,6 +134,7 @@
 		DD47546829D5E6E50012A20E /* TVServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TVServices.framework; path = System/Library/Frameworks/TVServices.framework; sourceTree = SDKROOT; };
 		DD47546B29D5E6E60012A20E /* ContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentProvider.swift; sourceTree = "<group>"; };
 		DD47546D29D5E6E60012A20E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD47547D29D5F14E0012A20E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DD5A9B6029D381E20036CEAA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DD5A9B6229D381EE0036CEAA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		DD5A9B6429D382190036CEAA /* ProfileCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionView.swift; sourceTree = "<group>"; };
@@ -296,6 +297,7 @@
 		DDF0488D29D2EBFA00E2BDC5 = {
 			isa = PBXGroup;
 			children = (
+				DD47547D29D5F14E0012A20E /* README.md */,
 				DDF0489829D2EBFA00E2BDC5 /* CursoFocusAppleTV */,
 				DD47546A29D5E6E60012A20E /* TopShelfExtension */,
 				DD47546729D5E6E50012A20E /* Frameworks */,
