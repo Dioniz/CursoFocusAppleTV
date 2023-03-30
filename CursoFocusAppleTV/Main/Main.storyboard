@@ -573,7 +573,7 @@
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVc-EE-M76">
-                                <rect key="frame" x="96" y="848" width="509" height="164"/>
+                                <rect key="frame" x="96" y="848" width="507" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
@@ -585,8 +585,11 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <action selector="topButtonAction:" destination="8M4-0g-4BK" eventType="primaryActionTriggered" id="nQT-Ed-dhE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-tA-Vop">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afy-tA-Vop" customClass="ParallaxButton" customModule="CursoFocusAppleTV" customModuleProvider="target">
                                 <rect key="frame" x="1315" y="68" width="509" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
@@ -892,6 +895,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0iF-SA-9cS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-80" y="7538"/>
+        </scene>
+        <!--Parallax Buttons View-->
+        <scene sceneID="Cgw-13-Nrz">
+            <objects>
+                <viewController storyboardIdentifier="ParallaxButtonsView" id="8f6-fe-I5s" customClass="ParallaxButtonsView" customModule="CursoFocusAppleTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a1L-9e-3q7"/>
+                        <viewControllerLayoutGuide type="bottom" id="K8x-01-y61"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="laC-On-ajP">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i41-JL-ZDn" customClass="ParallaxButton" customModule="CursoFocusAppleTV" customModuleProvider="target">
+                                <rect key="frame" x="180" y="390" width="450" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="R3C-TM-mG5"/>
+                                    <constraint firstAttribute="width" constant="450" id="fc8-N9-XmS"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M5-X0-2hp" customClass="ParallaxButton" customModule="CursoFocusAppleTV" customModuleProvider="target">
+                                <rect key="frame" x="735" y="390" width="450" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="dG4-Bs-NRm"/>
+                                    <constraint firstAttribute="width" constant="450" id="plg-WP-V99"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxD-es-GiD" customClass="ParallaxButton" customModule="CursoFocusAppleTV" customModuleProvider="target">
+                                <rect key="frame" x="1290" y="390" width="450" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="s5w-Yr-GE7"/>
+                                    <constraint firstAttribute="width" constant="450" id="z1A-nu-9sX"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="atP-Iv-JEd"/>
+                        <constraints>
+                            <constraint firstItem="2M5-X0-2hp" firstAttribute="centerX" secondItem="atP-Iv-JEd" secondAttribute="centerX" id="1eh-U2-wCp"/>
+                            <constraint firstItem="XxD-es-GiD" firstAttribute="leading" secondItem="2M5-X0-2hp" secondAttribute="trailing" constant="105" id="2ry-ue-rDk"/>
+                            <constraint firstItem="atP-Iv-JEd" firstAttribute="trailing" secondItem="XxD-es-GiD" secondAttribute="trailing" constant="100" id="NAc-lE-lzP"/>
+                            <constraint firstItem="i41-JL-ZDn" firstAttribute="centerY" secondItem="atP-Iv-JEd" secondAttribute="centerY" id="Yi3-yC-WnG"/>
+                            <constraint firstItem="2M5-X0-2hp" firstAttribute="leading" secondItem="i41-JL-ZDn" secondAttribute="trailing" constant="105" id="Ynk-JA-8nz"/>
+                            <constraint firstItem="XxD-es-GiD" firstAttribute="centerY" secondItem="atP-Iv-JEd" secondAttribute="centerY" id="fY4-Am-JdU"/>
+                            <constraint firstItem="i41-JL-ZDn" firstAttribute="leading" secondItem="atP-Iv-JEd" secondAttribute="leading" constant="100" id="rml-4l-gRv"/>
+                            <constraint firstItem="2M5-X0-2hp" firstAttribute="centerY" secondItem="atP-Iv-JEd" secondAttribute="centerY" id="sSr-E5-aUR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pKr-oL-X2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="8804"/>
         </scene>
     </scenes>
     <resources>

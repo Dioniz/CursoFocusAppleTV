@@ -32,6 +32,11 @@ class Option1MenuView: UIView {
         super.init(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         commonInit()
         self.backgroundColor = color
+
+       /* let menuPressRecognizer = UITapGestureRecognizer()
+        menuPressRecognizer.addTarget(self, action: #selector(self.menuButtonAction(recognizer:)))
+        menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.menu.rawValue)]
+        self.addGestureRecognizer(menuPressRecognizer)*/
     }
 
     func commonInit() {
@@ -39,5 +44,10 @@ class Option1MenuView: UIView {
         parentView.frame = bounds
         parentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(self.parentView)
+    }
+
+
+    @objc func menuButtonAction(recognizer: UITapGestureRecognizer) {
+        print("Back action in containerView")
     }
 }

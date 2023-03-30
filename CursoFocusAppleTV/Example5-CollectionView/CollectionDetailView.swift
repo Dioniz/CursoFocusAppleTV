@@ -13,7 +13,7 @@ class CollectionDetailView: UIViewController {
     @IBOutlet weak var recordButton: UIButton!
 
     var index: Int!
-    var isRecorded: Bool!
+    var isRecorded: Bool! = false
 
     override func viewDidLoad() {
         super.viewDidLoad()

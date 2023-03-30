@@ -26,7 +26,7 @@ class Example5View: UIViewController {
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.collectionView.collectionViewLayout = createFlowLayout()
-        self.collectionView.remembersLastFocusedIndexPath = true
+        //self.collectionView.remembersLastFocusedIndexPath = true
     }
 
     func createFlowLayout() -> UICollectionViewFlowLayout {
@@ -83,7 +83,9 @@ extension Example5View: UICollectionViewDelegate {
             detailView,
             animated: true
         ) {
-            self.posRecorded = 3
+            //self.setNeedsFocusUpdate()
+            self.posRecorded = self.lastItemIndex
+            //self.collectionView.reloadData()
             self.collectionView.reloadSections(.init(integer: 0))
         }
     }
@@ -112,5 +114,9 @@ extension Example5View {
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         super.didUpdateFocus(in: context, with: coordinator)
 
+        if let view = context.nextFocusedView as? ImageCollectionCell,
+           let index = collectionView.indexPath(for: view) {
+            self.lastItemIndex = index.item
+        }
     }
 }

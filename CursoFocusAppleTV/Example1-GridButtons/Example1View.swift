@@ -29,11 +29,36 @@ class Example1View: UIViewController {
         super.viewDidLoad()
         self.topRightButton.isHidden = true
         addFocusGuide()
-        NotificationCenter.default.addObserver(forName: UIFocusSystem.movementDidFailNotification, object: nil, queue: .main) { [weak self] notification in
-            let context = notification.userInfo![UIFocusSystem.focusUpdateContextUserInfoKey] as! UIFocusUpdateContext
-            print(context) // If you add a breakpoint here you can quicklook the context in the debugger for more information
-            print(UIFocusDebugger.checkFocusability(for: self!.topRightButton)) // replace collectionView with the view you want to check
+
+        addSwipe()
+    }
+
+    func addSwipe() {
+        let directions: [UISwipeGestureRecognizer.Direction] = [.right, .left, .up, .down]
+        for direction in directions {
+            let gesture = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipe(sender:)))
+            gesture.direction = direction
+            self.view.addGestureRecognizer(gesture)
         }
+    }
+
+    @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
+        switch sender.direction {
+        case UISwipeGestureRecognizer.Direction.right:
+            print("Swiped right")
+        case UISwipeGestureRecognizer.Direction.down:
+            print("Swiped down")
+        case UISwipeGestureRecognizer.Direction.left:
+            print("Swiped left")
+        case UISwipeGestureRecognizer.Direction.up:
+            print("Swiped up")
+        default:
+            break
+        }
+    }
+
+    @objc func swipeRight(recognizer: UISwipeGestureRecognizer) {
+        print("Swipe \(recognizer.direction)")
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -50,6 +75,11 @@ class Example1View: UIViewController {
             make.height.equalTo(50)
         }
         focusGuide.preferredFocusEnvironments = [middleLeftButton]
+    }
+
+    @IBAction func topButtonAction(_ sender: Any) {
+        let detailView = BaseBuilder.getViewController(storyboard: "Main", viewName: "CollectionDetailView") as! CollectionDetailView
+        navigationController?.pushViewController(detailView, animated: true)
     }
 }
 

@@ -27,9 +27,9 @@ class ProfileView: UIViewController {
         super.viewDidLoad()
         initView()
         profileList = UserProfileList(maxNumProfiles: 6, currentProfile: 2, items: [
-            UserProfile(id: "0", name: "Avatar 1"),
-            UserProfile(id: "1", name: "Avatar 2"),
-            UserProfile(id: "2", name: "Avatar 3")
+            UserProfile(id: "0", name: "Avatar 0"),
+            UserProfile(id: "1", name: "Avatar 1"),
+            UserProfile(id: "2", name: "Avatar 2")
         ])
         if let profileList = profileList {
             showProfileList(profileList: profileList)
@@ -90,20 +90,39 @@ class ProfileView: UIViewController {
             || self.tabBarController?.presentingViewController is UITabBarController
     }
 
+    @IBAction func createButtonAction(_ sender: Any) {
+        let count = profileList?.items?.count ?? 0
+        profileList?.items?.append(UserProfile(id: "\(count)", name: "Avatar \(count)"))
+
+        profileList?.currentProfile = count
+
+        if let profileList = profileList {
+            reloadProfiles(profileList: profileList)
+        }
+    }
 }
 
 extension ProfileView {
 
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-        if context.previouslyFocusedView is UICollectionViewCell {
 
+        if let view = context.nextFocusedView as? ProfileCell,
+           let index = profileCollectionView.indexPath(for: view) {
+            self.profileList?.currentProfile = index.item - profileCollectionView.sideOffsetCount
         }
     }
 }
 
 extension ProfileView: ProfileCellDelegate {
     func onClickProfileCell(profile: UserProfile) {
-        print("Profile clicked: \(profile.name)")
+        let count = profileList?.items?.count ?? 0
+        profileList?.items?.append(UserProfile(id: "\(count)", name: "Avatar \(count)"))
+
+        //profileList?.currentProfile = count
+
+        if let profileList = profileList {
+            reloadProfiles(profileList: profileList)
+        }
     }
 
 }

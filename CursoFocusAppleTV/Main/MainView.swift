@@ -26,6 +26,7 @@ class MainView: UIViewController, MainViewProtocol {
         MainOptions(title: "9 - DetailView", storyboardName: "Main", viewName: "DetailView"),
         MainOptions(title: "10 - HomeView", storyboardName: "Main", viewName: "Example10View"),
         MainOptions(title: "11 - ProfileView", storyboardName: "Profile", viewName: "ProfileView"),
+        MainOptions(title: "12 - ParallaxButtonsView", storyboardName: "Main", viewName: "ParallaxButtonsView"),
     ]
 
     override func viewDidLoad() {

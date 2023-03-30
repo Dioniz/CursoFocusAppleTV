@@ -46,6 +46,17 @@ class MenuView: UIViewController {
          }
          focusGuide2.preferredFocusEnvironments = [menuStackView]
          focusGuide2.isEnabled = true
+
+
+        let menuPressRecognizer = UITapGestureRecognizer()
+        menuPressRecognizer.addTarget(self, action: #selector(self.menuButtonAction(recognizer:)))
+        menuPressRecognizer.allowedPressTypes = [NSNumber(value: UIPress.PressType.menu.rawValue)]
+        self.view.addGestureRecognizer(menuPressRecognizer)
+    }
+
+    @objc func menuButtonAction(recognizer: UITapGestureRecognizer) {
+        print("Back action in menuView")
+        //self.navigationController?.popViewController(animated: true)
     }
 
 
